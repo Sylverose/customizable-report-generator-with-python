@@ -1,6 +1,6 @@
 # Custom Dynamic Report Generator with Python and MySQL
 
-This is a report on product sales, sorted descending by latest purchase. They present a join between 2 tables. 
+This is a report generator presenting on product sales, sorted descending by latest purchase. Creates a join between 2 tables in order to extract product names and purchase dates.
 - The rows are split dynamically on the pages
 - All colors are fully customizable
 - Report date is generation date
@@ -248,3 +248,4 @@ GPL-3.0 license
 - Uses MySQL 8.0.20+ alias syntax for `ON DUPLICATE KEY UPDATE` (future-proof, no deprecation warnings)
 
 - Tables can be created from Python using the included `create_tables()` function in `main.py` (run the script to drop, create, and import in one go)
+
