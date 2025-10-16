@@ -1,6 +1,14 @@
-# Python U5 Project
+# Custom Dynamic Report Generator with Python and MySQL
 
-This is a MySQL database interaction tool with Python. It creates tables and handles CSV data import into MySQL database tables.
+This is a report on product sales, sorted descending by latest purchase. They present a join between 2 tables. 
+- The rows are split dynamically on the pages
+- All colors are fully customizable
+- Report date is generation date
+- Alternative row coloring, so you are welcome to edit those too
+- Custom font you can replace with your own
+- Stamp (overlay) with logo, which can also be adjusted by coordinate, size and opacity into watermark
+
+It runs a script to generate the report, then you run another one to stamp the logo over.
 
 ## Challenges and solutions
 
@@ -238,4 +246,5 @@ GPL-3.0 license
 ## Notes
 
 - Uses MySQL 8.0.20+ alias syntax for `ON DUPLICATE KEY UPDATE` (future-proof, no deprecation warnings)
+
 - Tables can be created from Python using the included `create_tables()` function in `main.py` (run the script to drop, create, and import in one go)
